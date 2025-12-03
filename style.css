@@ -142,7 +142,7 @@ main .firstBlock .partnersBox {
     filter: grayscale(100%);
 }
 
-.servicesBlock {
+.servicesBlock, .caseBlock {
     width: 100%;
     padding: 0px 100px;
     gap: 80px;
@@ -282,11 +282,44 @@ main .firstBlock .partnersBox {
 }
 
 .makeHappenBox .contentBox .textBox .getProposalButton:hover {
-    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .makeHappenBox .contentBox img {
     position: absolute;
     top: -20px;
     right: 135px;
+}
+
+.caseBlock .content {
+    align-items: center;
+    border-radius: 45px;
+    padding: 70px 60px;
+    gap: 64px;
+    background-color: #191A23;
+}
+
+.caseBlock .content .textInfo {
+    align-items: start;
+    gap: 20px;
+}
+
+.caseBlock .content .textInfo .learnMoreButton {
+    display: flex;
+    align-items: center;
+    color: #B9FF66;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.caseBlock .content .textInfo p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.caseBlock .content .plug {
+    align-self: stretch;
+    width: 1px;
+    background-color: #fff;
 }
