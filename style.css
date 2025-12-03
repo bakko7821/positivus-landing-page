@@ -12,6 +12,18 @@ body {
     width: 100vw;
     min-height: 100vh;
     height: auto;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: transparent;        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #000;    /* цвет плашки */
+  border-radius: 20px;
 }
 
 .flex {
@@ -78,6 +90,12 @@ header nav .requestButton:hover {
     font-weight: 500;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
 main .firstBlock {
     gap: 70px;
 }
@@ -122,4 +140,153 @@ main .firstBlock .partnersBox {
     padding: 0px 100px;
     gap: 96px;
     filter: grayscale(100%);
+}
+
+.servicesBlock {
+    width: 100%;
+    padding: 0px 100px;
+    gap: 80px;
+}
+
+.headBox {
+    width: 100%;
+    gap: 40px;
+    align-items: center;
+}
+
+.headBox .colorText {
+    font-weight: 500;
+    font-size: 40px;
+    color: #000;
+    background-color: #B9FF66;
+    padding: 0px 6px;
+}
+
+.headBox .descriptionText {
+    width: 34%;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.cardBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 карточки в строку */
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.cardBox .card {
+    padding: 50px;
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    border: 1px #000 solid;
+    gap: 69px;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+    -moz-box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+    box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+}
+
+.cardBox .card.color {
+    background-color: #B9FF66;
+}
+
+.cardBox .card.color .textBox .tittleText {
+    background-color: #fff;
+}
+
+
+.cardBox .card.dark {
+    background-color: #191A23;
+}
+
+.cardBox .card.dark .textBox .tittleText {
+    background-color: #fff;
+}
+
+.cardBox .card.dark .textBox .learnMoreButton{
+    color: #fff;
+}
+
+.cardBox .card .textBox {
+    align-items: start;
+    width: 40%;
+}
+
+.cardBox .card .textBox .tittleText {
+    padding: 0px 6px;
+    background-color: #B9FF66 ;
+    font-weight: 500;
+    font-size: 30px;
+    color: #000;
+}
+
+.cardBox .card .textBox .learnMoreButton {
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    font-weight: 400;
+    gap: 16px;
+    transition: all 0.5s;
+}
+
+.cardBox .card .textBox .learnMoreButton img {
+    transition: all 0.5s;
+}
+
+.cardBox .card .textBox .learnMoreButton:hover {
+    transform: scale(1.1);
+}
+
+.cardBox .card .textBox .learnMoreButton:hover img {
+    transform: rotate(30deg);
+}
+
+.makeHappenBox {
+    padding: 24px 0px;
+}
+
+.makeHappenBox .contentBox {
+    position: relative;
+    border-radius: 45px;
+    padding: 60px;
+    width: 100%;
+    background-color: #F3F3F3;
+}
+
+.makeHappenBox .contentBox .textBox {
+    align-items: start;
+    gap: 26px;
+}
+
+.makeHappenBox .contentBox .textBox .tittleText {
+    font-weight: 500;
+    font-size: 30px;
+    color: #000;
+}
+
+.makeHappenBox .contentBox .textBox .descriptionText {
+    font-size: 18px;
+    font-weight: 400;
+    width: 50%;
+}
+
+.makeHappenBox .contentBox .textBox .getProposalButton {
+    padding: 20px 35px;
+    border-radius: 14px;
+    background-color: #191A23;
+    color: #fff;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.makeHappenBox .contentBox .textBox .getProposalButton:hover {
+    transform: scale(1.1);
+}
+
+.makeHappenBox .contentBox img {
+    position: absolute;
+    top: -20px;
+    right: 135px;
 }
