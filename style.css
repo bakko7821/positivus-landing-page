@@ -142,7 +142,7 @@ main .firstBlock .partnersBox {
     filter: grayscale(100%);
 }
 
-.servicesBlock, .caseBlock {
+.servicesBlock, .caseBlock, .teamBlock {
     width: 100%;
     padding: 0px 100px;
     gap: 80px;
@@ -168,14 +168,14 @@ main .firstBlock .partnersBox {
     font-size: 18px;
 }
 
-.cardBox {
+.servicesBlock .cardBox {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 карточки в строку */
     gap: 40px;
     margin-bottom: 20px;
 }
 
-.cardBox .card {
+.servicesBlock .cardBox .card {
     padding: 50px;
     background-color: #F3F3F3;
     border-radius: 45px;
@@ -186,20 +186,20 @@ main .firstBlock .partnersBox {
     box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
 }
 
-.cardBox .card.color {
+.servicesBlock .cardBox .card.color {
     background-color: #B9FF66;
 }
 
-.cardBox .card.color .textBox .tittleText {
+.servicesBlock .cardBox .card.color .textBox .tittleText {
     background-color: #fff;
 }
 
 
-.cardBox .card.dark {
+.servicesBlock .cardBox .card.dark {
     background-color: #191A23;
 }
 
-.cardBox .card.dark .textBox .tittleText {
+.servicesBlock .cardBox .card.dark .textBox .tittleText {
     background-color: #fff;
 }
 
@@ -207,12 +207,12 @@ main .firstBlock .partnersBox {
     color: #fff;
 }
 
-.cardBox .card .textBox {
+.servicesBlock .cardBox .card .textBox {
     align-items: start;
     width: 40%;
 }
 
-.cardBox .card .textBox .tittleText {
+.servicesBlock .cardBox .card .textBox .tittleText {
     padding: 0px 6px;
     background-color: #B9FF66 ;
     font-weight: 500;
@@ -220,7 +220,7 @@ main .firstBlock .partnersBox {
     color: #000;
 }
 
-.cardBox .card .textBox .learnMoreButton {
+.servicesBlock .cardBox .card .textBox .learnMoreButton {
     font-size: 20px;
     line-height: 28px;
     color: #000;
@@ -229,15 +229,15 @@ main .firstBlock .partnersBox {
     transition: all 0.5s;
 }
 
-.cardBox .card .textBox .learnMoreButton img {
+.servicesBlock .cardBox .card .textBox .learnMoreButton img {
     transition: all 0.5s;
 }
 
-.cardBox .card .textBox .learnMoreButton:hover {
+.servicesBlock .cardBox .card .textBox .learnMoreButton:hover {
     transform: scale(1.1);
 }
 
-.cardBox .card .textBox .learnMoreButton:hover img {
+.servicesBlock .cardBox .card .textBox .learnMoreButton:hover img {
     transform: rotate(30deg);
 }
 
@@ -322,4 +322,58 @@ main .firstBlock .partnersBox {
     align-self: stretch;
     width: 1px;
     background-color: #fff;
+}
+
+.teamBlock .cardBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 карточки в строку */
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.teamBlock .cardBox .card {
+    gap: 28px;
+    padding: 40px 35px;
+    background-color: #fff;
+    border: 1px #191A23 solid;
+    border-radius: 45px;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+    -moz-box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+    box-shadow: 0px 5px 0px 0px rgba(25, 26, 35, 1);
+}
+
+.teamBlock .cardBox .card .cardHeader {
+    align-items: end;
+    gap: 20px;
+    position: relative;
+}
+
+.teamBlock .cardBox .card .cardHeader .linkedInLink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+}
+
+.teamBlock .cardBox .card .cardHeader .linkedInLink:hover {
+    transform: scale(1.1);
+}
+
+.teamBlock .cardBox .card .cardHeader .textBox .fullname {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.teamBlock .cardBox .card .cardHeader .textBox .post,
+.teamBlock .cardBox .card .descriptionText{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.teamBlock .cardBox .card .plug {
+    width: 100%;
+    height: 1px;
+    background-color: #191A23;
 }
