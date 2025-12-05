@@ -8,10 +8,10 @@
 }
 
 body {
-    padding: 60px 0px;
+    padding: 60px 0px 0px 0px;
     width: 100vw;
     min-height: 100vh;
-    height: auto;
+    height: 100%;
     overflow-x: hidden;
 }
 
@@ -95,6 +95,7 @@ header nav .requestButton:hover {
 }
 
 main {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 140px;
@@ -144,6 +145,14 @@ main .firstBlock .partnersBox {
     padding: 0px 100px;
     gap: 96px;
     filter: grayscale(100%);
+}
+
+main .firstBlock .partnersBox a {
+    transition: all 0.5s;
+}
+
+main .firstBlock .partnersBox a:hover {
+    transform: scale(1.2);
 }
 
 .servicesBlock, .caseBlock, .teamBlock, .contactUsBlock {
@@ -207,10 +216,6 @@ main .firstBlock .partnersBox {
     background-color: #fff;
 }
 
-.cardBox .card.dark .textBox .learnMoreButton{
-    color: #fff;
-}
-
 .servicesBlock .cardBox .card .textBox {
     align-items: start;
     width: 40%;
@@ -231,6 +236,10 @@ main .firstBlock .partnersBox {
     font-weight: 400;
     gap: 16px;
     transition: all 0.5s;
+}
+
+.cardBox .card.dark .textBox .learnMoreButton{
+    color: #fff;
 }
 
 .servicesBlock .cardBox .card .textBox .learnMoreButton img {
@@ -495,3 +504,146 @@ main .firstBlock .partnersBox {
 .contactUsBlock .content form .sendMessageButton:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+footer {
+    margin-top: 140px;
+    width: 100vw;
+    min-height: 200px;
+    padding: 0px 100px;
+}
+
+footer .content {
+    padding: 50px 60px;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #191A23;
+    border-radius: 45px 45px 0px 0px;
+}
+
+footer .content .mainInfoBox {
+    gap: 67px;
+}
+
+footer .content .mainInfoBox .footerHeader {
+    align-items: center;
+}
+
+footer .content .mainInfoBox .footerHeader .logo img {
+    filter: invert(1);
+}
+
+footer .content .mainInfoBox .footerHeader nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+footer .content .mainInfoBox .footerHeader nav a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+footer .content .mainInfoBox .footerHeader .socialLinks a {
+    transition: all 0.5s;
+}
+
+footer .content .mainInfoBox .footerHeader nav a:hover,
+footer .content .mainInfoBox .footerHeader .socialLinks a:hover {
+    transform: scale(1.1);
+}
+
+footer .content .mainInfoBox .footerHeader .socialLinks {
+    gap: 20px;
+}
+
+footer .content .mainInfoBox .footerInfo .contactUsBox {
+    gap: 27px;
+}
+
+footer .content .mainInfoBox .footerInfo .contactUsBox .titleText {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    background-color: #B9FF66;
+    padding: 0px 6px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+footer .content .mainInfoBox .footerInfo .contactUsBox .contactsList {
+    gap: 20px;
+}
+
+footer .content .mainInfoBox .footerInfo .contactUsBox .contactsList p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+footer .content .mainInfoBox .footerInfo .subscribeNotificationForm {
+    display: flex;
+    padding: 58px 40px;
+    border-radius: 14px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #292A32;
+}
+
+footer .content .mainInfoBox .footerInfo .subscribeNotificationForm input {
+    border: 1px #fff solid;
+    border-radius: 14px;
+    padding: 22px 35px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+}
+
+footer .content .mainInfoBox .footerInfo .subscribeNotificationForm input::placeholder {
+    color: #fff;
+}
+
+footer .content .mainInfoBox .footerInfo .subscribeNotificationForm button {
+    background-color: #B9FF66;
+    color: #000;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 20px 35px;
+    border-radius: 14px;
+    transition: all 0.5s;
+}
+
+footer .content .mainInfoBox .footerInfo .subscribeNotificationForm button:hover {
+    font-weight: 500;
+    background-color: rgba(185, 255, 102, 0.7);
+}
+
+footer .content .plug{
+    align-self: stretch;
+    height: 1px;
+    background-color: #fff;
+}
+
+footer .content .bottomBox {
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #fff;
+}
+
+footer .content .bottomBox a {
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+
+footer .content .bottomBox a:hover {
+    transform: scale(1.1);
+}
+

@@ -19,7 +19,7 @@
         </nav>
     </header>
     <main>
-        <div class="firstBlock flex-column">
+        <section class="firstBlock flex-column">
             <div class="content flex-between">
                 <div class="textBox flex-column">
                     <h1 class="titleText">
@@ -40,8 +40,8 @@
                 <a href=https://www.netflix.com/"><img src="images/netflix-logo.svg" alt=""></a>
                 <a href="https://www.zoom.com/ru"><img src="images/zoom-logo.svg" alt=""></a>
             </div>
-        </div>
-        <div class="servicesBlock flex-column">
+        </section>
+        <section class="servicesBlock flex-column">
             <div class="headBox flex ">
                 <span class="colorText">Services</span>
                 <p class="descriptionText">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
@@ -100,8 +100,8 @@
                     <img src="images/Illustration-last-services.svg" alt="">
                 </div>
             </div>
-        </div>
-        <div class="caseBlock flex-column">
+        </section>
+        <section class="caseBlock flex-column">
             <div class="headBox flex ">
                 <span class="colorText">Case Studies</span>
                 <p class="descriptionText">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
@@ -122,8 +122,8 @@
                     <button class="learnMoreButton">Learn More <img src="images/learn-more-color.svg" alt=""></button>
                 </div>
             </div>
-        </div>
-        <div class="teamBlock flex-column">
+        </section>
+        <section class="teamBlock flex-column">
             <div class="headBox flex ">
                 <span class="colorText">Team</span>
                 <p class="descriptionText">Meet the skilled and experienced team behind our successful digital marketing strategies</p>
@@ -204,8 +204,8 @@
                 </div>
                 
             </div>
-        </div>
-        <div class="contactUsBlock flex-column">
+        </section>
+        <section class="contactUsBlock flex-column">
             <div class="headBox flex ">
                 <span class="colorText">Contact Us</span>
                 <p class="descriptionText">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
@@ -240,8 +240,48 @@
                 </form>
                 <img src="images/IllustrationForm.svg" alt="">
             </div>
-        </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="content flex-column">
+            <div class="mainInfoBox flex-column">
+                <div class="footerHeader flex-between">
+                    <a href="#" class="logo"><img src="images/logo.svg" alt=""></a>
+                    <nav>
+                        <a href="#">About Us</a>
+                        <a href="#">Services</a>
+                        <a href="#">Use Cases</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Blog</a>
+                    </nav>
+                    <div class="socialLinks flex-center">
+                        <a href="#" class="linkedInLink"><img src="images/linked-dark.svg" alt=""></a>
+                        <a href="#" class="facebookLink"><img src="images/facebook-dark.svg" alt=""></a>
+                        <a href="#" class="twitterLink"><img src="images/twitter-dark.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="footerInfo flex-between">
+                    <div class="contactUsBox flex-column">
+                        <p class="titleText">Contact Us:</p>
+                        <div class="contactsList flex-column">
+                            <p class="email">Email: info@positivus.com</p>
+                            <p class="phone">Phone: 555-567-8901</p>
+                            <p class="adress">Address: 1234 Main St <br/>
+                                Moonstone City, Stardust State 12345</p>
+                        </div>
+                    </div>
+                    <form action="submit" class="subscribeNotificationForm">
+                        <input type="email" placeholder="Email" name="email">
+                        <button class="handleFormButton" type="submit">Subscribe to News</button>
+                    </form>
+                </div>
+            </div>
+            <span class="plug"></span>
+            <div class="bottomBox flex">
+                <p>© 2023 Positivus. All Rights Reserved.</p>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
